@@ -1,6 +1,5 @@
 ﻿  tempFunctions.c
 c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(12): warning C4028: formal parameter 1 different from declaration
-c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(19): warning C4133: '=': incompatible types - from 'void (__cdecl *)(distance *)' to 'Operation'
 c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(25): warning C4028: formal parameter 1 different from declaration
 c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(39): warning C4028: formal parameter 1 different from declaration
   main.c

@@ -13,7 +13,7 @@ Description:	Assignment 01
 #include <stdio.h>//ostream
 #include <math.h>
 
-typedef  int(*Operation)(struct distance *tempvalues);//function pointer called Operation
+typedef  void(*Operation)(struct distance *tempvalues);//function pointer called Operation
 
 typedef struct DIST
 {
