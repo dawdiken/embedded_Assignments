@@ -16,8 +16,8 @@ int main()
 	distance tempvalues[Num_of_Structs]; //make 4 structures here
 	
 	fill_My_Structs(&tempvalues); //pass structures to function to be populated with data
-
-	tempvalues->printer_operation(&tempvalues);//call the 
+	
+	tempvalues->printer_operation(&tempvalues);//call the print structure
 	
 	calculate_Temp(&tempvalues);	//call function which callculate the average temp of all readings and print it 
 	

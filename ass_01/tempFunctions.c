@@ -8,7 +8,7 @@ Description:	Assignment 01
 
 #include "tmpMon.h"
 
-void fill_My_Structs(distance * tempvalues)
+void fill_My_Structs(distance *const tempvalues)
 {
 	int i;
 	for (i = 0; i < 4; i++) 
@@ -21,7 +21,7 @@ void fill_My_Structs(distance * tempvalues)
 }
 
 
-void calculate_Temp(distance * tempvalues)
+void calculate_Temp(const distance *const tempvalues)
 {
 	int i;
 	float total_temp = 0;
@@ -36,7 +36,7 @@ void calculate_Temp(distance * tempvalues)
 }
 
 
-void printMeBaby(distance * tempvalues) {
+void printMeBaby(const distance *const tempvalues) {
 
 	int ii;
 	for (ii = 0; ii<4; ii++)
@@ -48,4 +48,5 @@ void printMeBaby(distance * tempvalues) {
 	}
 
 }
+
 

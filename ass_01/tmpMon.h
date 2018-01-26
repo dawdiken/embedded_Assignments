@@ -13,7 +13,7 @@ Description:	Assignment 01
 #include <stdio.h>//ostream
 #include <math.h>
 
-typedef  void(*Operation)(struct distance *tempvalues);//function pointer called Operation
+typedef void(*Operation)(const struct distance  *const tempvalues);//function pointer called Operation
 
 typedef struct DIST
 {
@@ -25,10 +25,10 @@ typedef struct DIST
 	
 }distance;
 
-void printMeBaby(struct distance *tempvalues);
+void printMeBaby(const struct distance *const tempvalues);
 
-void calculate_Temp(struct distance *tempvalues);
+void calculate_Temp(const struct distance *const tempvalues);
 
-void fill_My_Structs(struct distance *tempvalues);
+void fill_My_Structs(struct distance *const tempvalues);
 
 #endif /* TMPMON_H */
