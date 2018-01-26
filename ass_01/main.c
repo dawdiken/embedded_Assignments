@@ -1,10 +1,12 @@
 /*
-Lab title:		Point Lab
+Lab title:		Assignment 01
 Name:			David Kenny
 Student Num:	G00070718
-date			22/01/2018
-Description:	Introdution lab to c++ concepts
+date			25/01/2018
+Description:	Assignment 01
 */
+
+
 #define _CRT_SECURE_NO_WARNINGS
 #define Num_of_Structs 4 
 

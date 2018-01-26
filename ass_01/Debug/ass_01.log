@@ -1,15 +1,15 @@
 ﻿  tempFunctions.c
-c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(4): warning C4028: formal parameter 1 different from declaration
-c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(11): warning C4133: '=': incompatible types - from 'void (__cdecl *)(distance *)' to 'Operation'
-c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(17): warning C4028: formal parameter 1 different from declaration
-c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(31): warning C4028: formal parameter 1 different from declaration
+c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(12): warning C4028: formal parameter 1 different from declaration
+c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(19): warning C4133: '=': incompatible types - from 'void (__cdecl *)(distance *)' to 'Operation'
+c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(25): warning C4028: formal parameter 1 different from declaration
+c:\users\g00070718\desktop\ass_01\ass_01\tempfunctions.c(39): warning C4028: formal parameter 1 different from declaration
   main.c
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(19): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(19): warning C4024: 'fill_My_Structs': different types for formal and actual parameter 1
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(24): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(24): warning C4024: 'function through pointer': different types for formal and actual parameter 1
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(25): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
-c:\users\g00070718\desktop\ass_01\ass_01\main.c(25): warning C4024: 'calculate_Temp': different types for formal and actual parameter 1
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(21): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(21): warning C4024: 'fill_My_Structs': different types for formal and actual parameter 1
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(26): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(26): warning C4024: 'function through pointer': different types for formal and actual parameter 1
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(27): warning C4047: 'function': 'distance *' differs in levels of indirection from 'distance (*)[4]'
+c:\users\g00070718\desktop\ass_01\ass_01\main.c(27): warning C4024: 'calculate_Temp': different types for formal and actual parameter 1
   Generating Code...
   ass_01.vcxproj -> C:\Users\G00070718\Desktop\ass_01\Debug\ass_01.exe
   ass_01.vcxproj -> C:\Users\G00070718\Desktop\ass_01\Debug\ass_01.pdb (Partial PDB)

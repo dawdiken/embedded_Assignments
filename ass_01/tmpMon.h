@@ -8,6 +8,7 @@ Description:	Assignment 01
 
 #ifndef TMPMON_H
 #define TMPMON_H
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>//ostream
 #include <math.h>
