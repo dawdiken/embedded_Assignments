@@ -24,10 +24,9 @@ typedef struct DIST
 	
 }distance;
 
-
 void printMeBaby(struct distance *tempvalues);
 
-void caluclate_Temp(struct distance *tempvalues);
+void calculate_Temp(struct distance *tempvalues);
 
 void fill_My_Structs(struct distance *tempvalues);
 
