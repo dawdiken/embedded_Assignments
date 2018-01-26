@@ -31,7 +31,4 @@ void caluclate_Temp(struct distance *tempvalues);
 
 void fill_My_Structs(struct distance *tempvalues);
 
-
-
-
 #endif /* TMPMON_H */

@@ -14,15 +14,15 @@ Description:	Introdution lab to c++ concepts
 
 int main()
 {	
-	distance tempvalues[Num_of_Structs];
+	distance tempvalues[Num_of_Structs]; //make 4 structures here
 	
-	fill_My_Structs(&tempvalues);
+	fill_My_Structs(&tempvalues); //pass structures to function to be populated with data
 		
 	//tempvalues[1].printer_operation(&tempvalues[0], &tempvalues[1], &tempvalues[2], &tempvalues[3]);
 	//int struct_num = 0;//variable to pass each struct
 	//tempvalues->printer_operation(&tempvalues[struct_num], &tempvalues[struct_num+1], &tempvalues[struct_num+1], &tempvalues[struct_num+1]);
 	tempvalues->printer_operation(&tempvalues[Num_of_Structs-4], &tempvalues[Num_of_Structs - 3], &tempvalues[Num_of_Structs - 2], &tempvalues[Num_of_Structs - 1]);
-	caluclate_Temp(&tempvalues);	//print average temp of all readings 
+	calculate_Temp(&tempvalues);	//print average temp of all readings 
 	return 0;
 }
 

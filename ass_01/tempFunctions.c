@@ -13,7 +13,7 @@ void fill_My_Structs(distance * tempvalues)
 }
 
 
-void caluclate_Temp(distance * tempvalues)
+void calculate_Temp(distance * tempvalues)
 {
 	int i;
 	float total_temp = 0;
