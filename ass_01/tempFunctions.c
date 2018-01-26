@@ -16,7 +16,7 @@ void fill_My_Structs(distance * tempvalues)
 		printf("Enter the signal name, previous temperature and present temperature values:\n");
 		scanf("%s", tempvalues[i].strName);
 		scanf("%f%f", &tempvalues[i].previousTemp, &tempvalues[i].presentTemp);
-		tempvalues[i].printer_operation = printMeBaby;
+		tempvalues[i].printer_operation = printMeBaby;  //set function pointer in each struct to the printMebaby function
 	}
 }
 
