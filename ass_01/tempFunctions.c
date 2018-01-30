@@ -37,20 +37,7 @@ void calculate_Temp(const distance *const tempvalues)
 }
 
 
-//void printMeBaby(const distance *const tempvalues) {
-//
-//	int ii;
-//	for (ii = 0; ii<4; ii++)
-//	{
-//		printf(" Temperature values of Structure: %d \n", ii + 1);
-//		printf(" Measurement Name =  %s \n", tempvalues[ii].strName);
-//		printf(" Present Temperature = %f \n", tempvalues[ii].presentTemp);
-//		printf(" Previous Temperature =  %f\n\n", tempvalues[ii].previousTemp);
-//	}
-//
-//}
-
-void printMeBaby(const distance *const tempvalues, int val) {
+void printMeBaby(const distance *const tempvalues, const int val) {
 
 
 	printf(" Temperature values of Structure: %d \n", val + 1);

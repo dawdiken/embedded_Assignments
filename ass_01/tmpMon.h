@@ -27,7 +27,7 @@ typedef struct DIST
 	
 }distance;
 
-void printMeBaby(const struct distance *const tempvalues, int val);
+void printMeBaby(const struct distance *const tempvalues, const int val);
 
 void calculate_Temp(const struct distance *const tempvalues);
 
