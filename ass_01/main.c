@@ -16,12 +16,11 @@ int main()
 	distance tempvalues[Num_of_Structs]; //make 4 structures here
 	
 	fill_My_Structs(&tempvalues); //pass structures to function to be populated with data
-	
 	//tempvalues->printer_operation(&tempvalues);//call the print structure
-	tempvalues->printer_operation(&tempvalues[0], 0);//call the print structure of struct 0
-	tempvalues->printer_operation(&tempvalues[0], 1);//call the print structure of struct 1
-	tempvalues->printer_operation(&tempvalues[0], 2);//call the print structure of struct 2
-	tempvalues->printer_operation(&tempvalues[0], 3);//call the print structure of struct 3
+	tempvalues->printer_operation(&tempvalues, 0);//call the print structure of struct 0
+	tempvalues->printer_operation(&tempvalues, 1);//call the print structure of struct 1
+	tempvalues->printer_operation(&tempvalues, 2);//call the print structure of struct 2
+	tempvalues->printer_operation(&tempvalues, 3);//call the print structure of struct 3
 	
 	calculate_Temp(&tempvalues);	//call function which callculate the average temp of all readings and print it 
 	
