@@ -13,7 +13,8 @@ void fill_My_Structs(distance *const tempvalues)
 	int i;
 	for (i = 0; i < 4; i++) 
 	{
-		printf("Enter three values.. 1.The signal name, 2.Previous temperature and 3.Present temperature values:\n");
+		printf("Enter three values for reading %d:\n", i +1 );
+		printf("1.The signal name, 2.Previous temperature and 3.Present temperature values:\n");
 		scanf("%s", tempvalues[i].strName);
 		scanf("%f%f", &tempvalues[i].previousTemp, &tempvalues[i].presentTemp);
 		tempvalues[i].printer_operation = printMeBaby;  //set function pointer in each struct to the printMebaby function
