@@ -13,7 +13,7 @@ void fill_My_Structs(distance *const tempvalues)
 	int i;
 	for (i = 0; i < 4; i++) 
 	{
-		printf("Enter the signal name, previous temperature and present temperature values:\n");
+		printf("Enter three values.. 1.The signal name, 2.Previous temperature and 3.Present temperature values:\n");
 		scanf("%s", tempvalues[i].strName);
 		scanf("%f%f", &tempvalues[i].previousTemp, &tempvalues[i].presentTemp);
 		tempvalues[i].printer_operation = printMeBaby;  //set function pointer in each struct to the printMebaby function
@@ -36,17 +36,27 @@ void calculate_Temp(const distance *const tempvalues)
 }
 
 
-void printMeBaby(const distance *const tempvalues) {
+//void printMeBaby(const distance *const tempvalues) {
+//
+//	int ii;
+//	for (ii = 0; ii<4; ii++)
+//	{
+//		printf(" Temperature values of Structure: %d \n", ii + 1);
+//		printf(" Measurement Name =  %s \n", tempvalues[ii].strName);
+//		printf(" Present Temperature = %f \n", tempvalues[ii].presentTemp);
+//		printf(" Previous Temperature =  %f\n\n", tempvalues[ii].previousTemp);
+//	}
+//
+//}
 
-	int ii;
-	for (ii = 0; ii<4; ii++)
-	{
-		printf(" Temperature values of Structure: %d \n", ii + 1);
-		printf(" Measurement Name =  %s \n", tempvalues[ii].strName);
-		printf(" Present Temperature = %f \n", tempvalues[ii].presentTemp);
-		printf(" Previous Temperature =  %f\n\n", tempvalues[ii].previousTemp);
-	}
+void printMeBaby(const distance *const tempvalues, int val) {
 
+
+	printf(" Temperature values of Structure: %d \n", val + 1);
+	printf(" Measurement Name =  %s \n", tempvalues[val].strName);
+	printf(" Present Temperature = %f \n", tempvalues[val].presentTemp);
+	printf(" Previous Temperature =  %f\n\n", tempvalues[val].previousTemp);
+	
 }
 
 
