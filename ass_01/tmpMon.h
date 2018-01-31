@@ -13,7 +13,6 @@ Description:	Assignment 01
 #include <stdio.h>//ostream
 #include <math.h>
 
-//typedef void(*Operation)(const struct distance  *const tempvalues);//function pointer Operation
 
 typedef struct DIST
 {
@@ -22,10 +21,9 @@ typedef struct DIST
 	float previousTemp;
 
 	void (*printer_operation)();
-
-	//Operation printer_operation; // funtion pointer 
 	
 }distance;
+
 
 void printMeBaby(const struct distance *const tempvalues, const int val);
 

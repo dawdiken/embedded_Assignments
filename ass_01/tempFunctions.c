@@ -39,7 +39,6 @@ void calculate_Temp(const distance *const tempvalues)
 
 void printMeBaby(const distance *const tempvalues, const int val) {
 
-
 	printf(" Temperature values of Structure: %d \n", val + 1);
 	printf(" Measurement Name =  %s \n", tempvalues[val].strName);
 	printf(" Present Temperature = %f \n", tempvalues[val].presentTemp);
