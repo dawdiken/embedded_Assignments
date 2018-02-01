@@ -7,16 +7,32 @@ Description:	Assignment 01
 */
 
 #include "tmpMon.h"
+float count = 0;
 
 void fill_My_Structs(distance *const tempvalues)
 {
+	
 	int i;
+	float *previous;
+	int variable = 0;
+	//int *ptr = variable;
 	for (i = 0; i < 4; i++) 
 	{
-		printf("Enter three values for reading %d:\n", i +1 );
-		printf("1.The signal name, 2.Previous temperature and 3.Present temperature values:\n");
+		if (count < 4) {
+			float *default_val = &variable;
+						
+			tempvalues[i].previousTemp = *default_val;
+			count = count + 1;
+		}
+		else {
+			previous = &tempvalues[i].presentTemp;
+			tempvalues[i].previousTemp = *previous;
+		}
+		
+		printf("Enter 2 values for measurment %d:\n", i +1 );
+		printf("1.The signal name, 2.Present temperature values:\n");
 		scanf("%s", tempvalues[i].strName);
-		scanf("%f%f", &tempvalues[i].previousTemp, &tempvalues[i].presentTemp);
+		scanf("%f", &tempvalues[i].presentTemp);
 		tempvalues[i].printer_operation = printMeBaby;  //set function pointer in each struct to the printMebaby function
 	}
 }
