@@ -9,17 +9,17 @@ Description:	Assignment 01
 #include "tmpMon.h"
 float count = 0;
 
-void fill_My_Structs(distance *const tempvalues)
+void fill_My_Structs(temperature *const tempvalues)
 {
 	
 	int i;
 	float *previous;
-	int variable = 0;
-	//int *ptr = variable;
+	int default_to_zero = 0;
+	//default previous temp to zero if it is the first time to populate the structs
 	for (i = 0; i < 4; i++) 
 	{
 		if (count < 4) {
-			float *default_val = &variable;
+			float *default_val = &default_to_zero;
 						
 			tempvalues[i].previousTemp = *default_val;
 			count = count + 1;
@@ -38,7 +38,7 @@ void fill_My_Structs(distance *const tempvalues)
 }
 
 
-void calculate_Temp(const distance *const tempvalues)
+void calculate_Temp(const temperature *const tempvalues)
 {
 	int i;
 	float total_temp = 0;
@@ -48,17 +48,26 @@ void calculate_Temp(const distance *const tempvalues)
 		total_temp = total_temp + tempvalues[i].previousTemp;
 		total_temp = total_temp + tempvalues[i].presentTemp;
 	}
-	average_temp = total_temp / (i++*2);//8 values so add 1 to i so it is = to 4 and then multiply 4 by 2 to get 8 which is the num of values read in to all the structs
-	printf(" Average Temperature of all readings = %f \n\n", average_temp);
+	//check to see if its first pass and get true average because there was no past values the first time
+	if (count == 4) {
+		count = count +  1;
+		average_temp = total_temp / (i++);
+	}
+	else //use the past values if its not the first time because the past values are relevant this time
+	{
+		average_temp = total_temp / (i++ * 2);//8 values so add 1 to i so it is = to 4 and then multiply 4 by 2 to get 8 which is the num of values read in to all the structs
+	}
+	
+	printf(" Average Temperature of all readings = %.2f \n\n", average_temp);
 }
 
 
-void printMeBaby(const distance *const tempvalues, const int val) {
+void printMeBaby(const temperature *const tempvalues, const int val) {
 
 	printf(" Temperature values of Structure: %d \n", val + 1);
 	printf(" Measurement Name =  %s \n", tempvalues[val].strName);
-	printf(" Present Temperature = %f \n", tempvalues[val].presentTemp);
-	printf(" Previous Temperature =  %f\n\n", tempvalues[val].previousTemp);
+	printf(" Present Temperature = %.2f \n", tempvalues[val].presentTemp);
+	printf(" Previous Temperature =  %.2f\n\n", tempvalues[val].previousTemp);
 	
 }
 

@@ -14,7 +14,7 @@ Description:	Assignment 01
 #include <math.h>
 
 
-typedef struct DIST
+typedef struct TEMP
 {
 	char strName[10];
 	float presentTemp;
@@ -22,13 +22,13 @@ typedef struct DIST
 
 	void (*printer_operation)();
 	
-}distance;
+}temperature;
 
 
-void printMeBaby(const struct distance *const tempvalues, const int val);
+void printMeBaby(const struct temperature *const tempvalues, const int val);
 
-void calculate_Temp(const struct distance *const tempvalues);
+void calculate_Temp(const struct temperature *const tempvalues);
 
-void fill_My_Structs(struct distance *const tempvalues);
+void fill_My_Structs(struct temperature *const tempvalues);
 
 #endif /* TMPMON_H */
